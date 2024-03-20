@@ -1,0 +1,39 @@
+.container-iframe{
+    width: 50%;
+}
+.container-iframe iframe{
+    width: 100%;
+}
+.taburi-iframe{
+    display:flex;
+    flex-direction: line;
+    justify-content: center;
+    margin-inline: 0.5em;
+    margin-right: 0.5em;
+    
+}
+.taburi-iframe>a{
+    border:1px solid var(--culoare-border);
+    background-color: var(--culoare-fundal);
+    margin-bottom: 0em;
+    margin-right: 0.5em;
+    padding: 0.6em;
+    transition: all 0.7s linear;
+    box-shadow: 0 0 0.15em 0.15em var(--culoare-text2);
+}
+
+.taburi-iframe>a:hover{
+    background-color: var(--culoare-accent);
+    color: white;
+}
+
+#tab-orar td, #tab-orar th{
+    padding:0.5em;
+    text-align:center;
+    border:1px solid black;
+  }
+  
+  #tab-orar thead th:nth-child(2n+1){
+      background:rgb(24, 185, 105);
+      color: white;
+  }

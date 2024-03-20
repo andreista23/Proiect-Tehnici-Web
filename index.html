@@ -17,17 +17,16 @@
     <link rel="mask-icon" href="resurse/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="shortcut icon" href="resurse/favicon/favicon.ico">
     <link rel="stylesheet" href="resurse/css/style.css">
+    <link rel="stylesheet" href="resurse/css/layout.css" type="text/css" />
+    <link rel="stylesheet" href="resurse/css/general.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="resurse/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <style>
-        p{
-            color: #DB961D;
-        }
-    </style>
+    
 
 </head>
 
@@ -48,7 +47,125 @@
 
     
     <main>
-        <section id = "welcome">
+        <div id="grid-pagina">
+        <section id="welcome">
+            <h2>Bine ati venit!</h2>
+                
+                <p class="anunt intro"><p><b>Bicicletele</b> <abbr title = "Mountain Bike">mtb</abbr> sunt super universale. Acestea pot fi utilizate pentru transportarea cumparaturilor, plimbarile prin parc sau calatoriile in jurul lumii. Insa rolul de baza a bicicletei mtb sau de munte ramane acela de a aduce un aport important biciclistului in depasirea traseelor de noroi, nu neaparat doar a celor de munte. 
+
+                    Vezi mai jos cum sa alegi corect o bicicleta mtb.
+                    
+                    Bicicletele mtb sunt proiectate pentru deplasari in conditii ceva mai severe. de regula detin un cadru mai rezistent si puternic, utilizeaza anvelope mult mai late si jante armate, detin elemente de suspensie lina pentru depasirea obstacolelor cross-countru cu care se confrunta ciclistul pe traseu.
+                    
+                    Preturile pentru o bicicleta mountain bike difera destul de mult, asta pentru ca echiparile, cadrul si marca sunt definitorii in stabilirea unui pret corect. Poti cumpara o bicicleta mtb de incepator undeva la 1500 lei, si poti ajunge la un pret de peste 8000 lei pentru biciclete mtb de calitate.<strong>Nu uitati sa folositi casca</strong></p>
+                <div id="dv-prezentare-1">
+                    <div id="dv-prezentare">
+                        <figure>
+                            <picture>
+                                <source srcset="./resurse/imagini/imag2.jpg" media="(max-width:700px)"/>
+                                <source srcset="./resurse/imagini/imag3.jpg" media="(max-width:1200px)"/>
+                                <img class="bicicleta" src ="resurse/imagini/imag1.jpg" alt = bicicleta>
+                            </picture>
+                            <figcaption>Bicicleta</figcaption>
+                        </figure>
+                </div>
+                
+        </section>
+        <section id="promotii">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </section>
+        <section id="anunturi">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </section>
+        <section id="orar">
+            <h2>Program de functionare a magazinului</h2>
+            <table id="tab-orar">
+                <thead>
+
+                    <tr>
+                        <th>Cod</th>
+                        <th>Perioadă</th>
+                        <th>Zi</th>
+                        <th>Interval dimineata</th>
+                        <th>Pauza de masa</th>
+                        <th>Interval seară</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td rowspan="5">Zile<br/>Lucrătoare</td>
+                        <td>Luni</td>
+                        <td>10-12</td>
+                        <td>12-14</td>
+                        <td>14-20</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        
+                        <td>Marti</td>
+                        <td>9-12</td>
+                        <td>12-14</td>
+                        <td>14-21</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        
+                        <td>Miercuri</td>
+                        <td>9-11</td>
+                        <td>11-13</td>
+                        <td>14-21</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        
+                        <td>Joi</td>
+                        <td>9-11</td>
+                        <td>11-13</td>
+                        <td>14-21</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        
+                        <td>Vineri</td>
+                        <td>9-12</td>
+                        <td>12-14</td>
+                        <td>14-19</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td rowspan="2">Weekend</td>
+                        <td>Sambata</td>
+                        <td>10-12</td>
+                        <td>12-13</td>
+                        <td>13-16</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Duminica</td>
+                        <td>10-14</td>
+                        <td>-</td>
+                        <td>inchis</td>
+                    </tr>
+                </tbody>
+                <tfoot><tr><td colspan="6">Programul poate suferi modificari in timpul sarbatorilor</td></tr></tfoot>
+            </table> 
+        </section>
+        <section id="calendar">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </section>
+        <section id="lista_utilizatori">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </section>
+        <section id="date_site">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </section>
+        <section id="date_utilizatori">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+        </section>
+        </div>
+        <section id = "welcome2">
             <h2>Descriere</h2>
             <a href="https://ro.wikipedia.org/wiki/Biciclet%C4%83" target="_blank">Bicicleta wiki</a>
             <figure>
@@ -68,12 +185,13 @@
                 Preturile pentru o bicicleta mountain bike difera destul de mult, asta pentru ca echiparile, cadrul si marca sunt definitorii in stabilirea unui pret corect. Poti cumpara o bicicleta mtb de incepator undeva la 1500 lei, si poti ajunge la un pret de peste 8000 lei pentru biciclete mtb de calitate.<strong>Nu uitati sa folositi casca</strong></p>
         </section>
         <section id="Demonstratie">
-            <div class="taburi-iframe">
-                <a href = "https://www.youtube.com/embed/xPKRvsFGKs4?si=Abd7u-iToayooWfU" target="ifr-video">Demonstratie MTB</a>
-                <a href = "https://www.youtube.com/embed/gsU4d2dwftk?si=j5A8_w3IauRnZ4Tx" target="ifr-video">Demonstratie Road Bike</a>
-            </div>
+            <div class="container-iframe">
+                <div class="taburi-iframe">
+                    <a href = "https://www.youtube.com/embed/xPKRvsFGKs4?si=Abd7u-iToayooWfU" target="ifr-video">Demonstratie MTB</a>
+                    <a href = "https://www.youtube.com/embed/gsU4d2dwftk?si=j5A8_w3IauRnZ4Tx" target="ifr-video">Demonstratie Road Bike</a>
+                </div>
             <iframe name = "ifr-video" width="560" height="315" src="https://www.youtube.com/embed/xPKRvsFGKs4?si=Abd7u-iToayooWfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            
+        </div>
         </section>
         <section id = "q&a">
             <h2>Intrebari frecvente</h2>
@@ -88,9 +206,9 @@
         </section>
     </main>
     <footer>
-        <a href="#">mergi sus</a> 
-        <address>  
-            <p>Telefon: <a href="tel:+0768488508">0768488508</a></p>
+        <a href="#" title="mergi sus" id="link-top"><div id="sageata">&#8593</div></a>
+        <address>
+            <p><i class="fa fa-phone"></i> Telefon: <a href="tel:+0768488508">0768488508</a></p>
             <p></p><a href="https://www.google.com/maps/place/Strada+%C8%98tirbei+Vod%C4%83,+Bucure%C8%99ti/@44.4398663,26.0844201,17z/data=!3m1!4b1!4m6!3m5!1s0x40b1ff5ba6073e01:0xd59e58515ba8b165!8m2!3d44.4398625!4d26.086995!16s%2Fg%2F11b8v5fwkf?entry=ttu" target="_blank">Locatie</a>
             <p></p><a href="https://wa.me/0768488508" target="_blank">Message Us on WhatsApp</a>
             <p>Email: <a href = "mailto:andreistanica233@gmail.com" >andreistanica233@gmail.com</a> </p>    
