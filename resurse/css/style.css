@@ -36,29 +36,28 @@ footer{
     background: rgb(220,220,220);
     font-size: 2.5em;
     filter:blur(0.04em);
-    transition: 1s linear;
-    transform-origin: center;
+    transition:all 1s linear;
     box-shadow: inset 0 0 0.15em #000000;
   }
   #link-top:hover{
     opacity:1;
     filter:none;
     transform: rotateZ(90deg);
-    transform-origin: center;
   }
   #sageata{
-    transform: translateY(-30%); /* Adjust vertical position */
-    height: 0.5em;
-    width: 0.8em;
-    display: inline-block;
+    position: relative;
     vertical-align: top;
+    display: inline-block;
+    transform: translateY(-20%);
+    width: 1em;
+    height: 1em;
     color: red;
     transition: all 1s linear;
   }
 }
 #link-top:hover>#sageata{
     color: red;
-    transform:  translate(-50%, 50%) rotateZ(-90deg) ;
+    transform:  rotateZ(-90deg)  translateY(-20%);
 }
 
 html{
