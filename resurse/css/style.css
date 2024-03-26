@@ -36,7 +36,7 @@ footer{
     background: rgb(220,220,220);
     font-size: 2.5em;
     filter:blur(0.04em);
-    transition:all 1s linear;
+    transition:all 0.7s linear;
     box-shadow: inset 0 0 0.15em #000000;
   }
   #link-top:hover{
@@ -52,7 +52,7 @@ footer{
     width: 1em;
     height: 1em;
     color: red;
-    transition: all 1s linear;
+    transition: all 0.7s linear;
   }
 }
 #link-top:hover>#sageata{
