@@ -16,13 +16,13 @@
     <link rel="manifest" href="resurse/favicon/site.webmanifest">
     <link rel="mask-icon" href="resurse/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="shortcut icon" href="resurse/favicon/favicon.ico">
-    <link rel="stylesheet" href="resurse/css/style.css">
     <link rel="stylesheet" href="resurse/css/layout.css" type="text/css" />
     <link rel="stylesheet" href="resurse/css/general.css" type="text/css" />
-    <link rel="stylesheet" href="resurse/css/nav.css" type="text/css" />
+    <link rel="stylesheet" href="resurse/scss/nav.css" type="text/css" />
     <link rel="stylesheet" href="resurse/css/nav700.css" type="text/css" media="screen and (max-width:700px)"/>
     <link rel="stylesheet" href="resurse/css/nav1000.css" type="text/css" media="screen and (max-width:1000px)"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="resurse/css/style.css">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="resurse/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
@@ -36,6 +36,7 @@
 <body>
     <header>
         <h1>Magazin de biciclete</h1>
+        <p id="watermark"></p>
         <nav>
             
             <label id="hamburger" for="ch-menu">
@@ -43,7 +44,7 @@
             </label>
             <input id="ch-menu" type="checkbox">
             <ul class="meniu">
-                <li><div id="acasa">Acasa</div><div id="acasa-mediu"><span class="fas fa-regular fa-house"></span></div>
+                <li><div id="acasa">Acasa</div><div id="acasa-mediu"><i class="fa fa-house"></i></div>
                     <ul>
                         <li><a href="#welcome">Bine ati venit</a></li>
                         <li><a href="#promotii">Promotii</a></li>
@@ -69,9 +70,9 @@
                 <li><div>Produse</div>
                     <ul>
                         <li><a href="http://www.google.com">Toate</a></li>
-                        <li><a href="#">Prajituri</a></li>
-                        <li><a href="#">Torturi</a></li>
-                        <li><a href="#">Patiserie</a></li>
+                        <li><a href="#">MTB</a></li>
+                        <li><a href="#">Road Bikes</a></li>
+                        <li><a href="#">Componente</a></li>
                     </ul>
                 
                 </li>
@@ -221,6 +222,7 @@
         </section>
     </main>
     <footer>
+        <p id="absolut"></p>
         <a href="#" title="mergi sus" id="link-top"><div id="sageata">&#8593</div></a>
         <address>
             <p><i class="fa fa-phone"></i> Telefon: <a href="tel:+0768488508">0768488508</a></p>
@@ -230,6 +232,7 @@
         </address>
         <a href="fisier.pdf" download>descarcabil</a>
         <p><small>Copyright &copy; <time datetime="2012-10-18">18 octombrie 2012</time></small></p>
+       
     </footer>
 </body>
 </html>

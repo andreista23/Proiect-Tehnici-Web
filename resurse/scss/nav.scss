@@ -1,0 +1,110 @@
+$color_1: var(--culoare-text);
+$background-color_1: var(--culoare-fundal);
+
+@keyframes animatie-submeniu {
+	100% {
+		opacity: 1;
+		transform: scaleY(1);
+	}
+}
+/*
+.meniu li:hover>div, .meniu li:hover>a{
+    background-color: var(--culoare-accent);
+    color: white;
+}
+*/
+nav {
+	--inaltime-meniu: 2.5em;
+	--latime-buton: 150px;
+	height: var(--inaltime-meniu);
+	background-color: $background-color_1;
+	margin-bottom: 1em;
+}
+#hamburger {
+	display: none;
+}
+#ch-menu {
+	display: none;
+}
+#acasa-mediu {
+	display: none;
+}
+.meniu {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 2em;
+	background-color: $background-color_1;
+	ul {
+		list-style-type: none;
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		background-color: $background-color_1;
+		transform-origin: center;
+		transform: scaleY(0);
+		transition: transform 0.2s ease-in-out;
+		li {
+			display: inline-block;
+			a {
+				display: block;
+				width: auto;
+			}
+		}
+	}
+	li {
+		position: relative;
+		display: inline-block;
+		width: var(--latime-buton);
+		height: var(--inaltime-meniu);
+		text-align: center;
+		box-sizing: border-box;
+		div {
+			line-height: var(--inaltime-meniu);
+			color: $color_1;
+			cursor: pointer;
+			text-decoration: none;
+			box-sizing: border-box;
+			transition: all 1s linear;
+			&::before {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 7px;
+				background: linear-gradient(to right, var(--culoare-fundal), white);
+				transform-origin: left;
+				transform: scaleX(0);
+				transition: transform 0.3s ease;
+			}
+			&:hover {
+				&::before {
+					transform-origin: right;
+					transform: scaleX(1);
+				}
+			}
+		}
+		a {
+			line-height: var(--inaltime-meniu);
+			color: $color_1;
+			cursor: pointer;
+			text-decoration: none;
+			box-sizing: border-box;
+			transition: all 1s linear;
+		}
+		&:hover {
+			>ul {
+				display: block;
+				position: absolute;
+				z-index: 100;
+				transform-origin: center;
+				animation: animatie-submeniu 0.5s linear 1 forwards;
+			}
+		}
+	}
+}
