@@ -216,3 +216,56 @@ html{
 		width:100%;
 		text-align:center;
 	}
+
+	::cue{
+		background-color: var(--culoare-fundal);
+		color: var(--culoare-accent);
+		font-size: 1em;
+	}
+	
+	a:visited {
+		color: red; 
+	  }
+	  a:visited {
+		color: red; 
+	  }
+	  
+	  a[href^="http"]::before {
+		content: "⮳";
+		font-size: 150%; /* Font-size cu 50% mai mare față de dimensiunea fontului linkului */
+		margin-right: 0.2em;
+	  }
+	  
+	  
+	  a[href^="http"]:hover::before {
+		color: red; 
+	  }
+	  
+	  main a, main p a {
+		position: relative;
+		display: inline-block;}
+	  
+	  main a::after, main p a::after {
+		content: '';
+		position: absolute;
+		top: 60%;
+		left: 65%;
+		transform: translate(-50%, -50%);
+		width: 80%;
+		height: 50%;
+		background: radial-gradient(circle,var(--culoare-accent) 0%, var(--culoare-border) 40%, transparent 80%, transparent 100%);
+		background-position: center;
+		background-size: 0;
+		border-radius: 50%;
+		transition: background-size 1s ease-in-out;
+		z-index: -1;
+	  }
+	  
+	  main a:hover::after, main p a:hover::after {
+		background-size: 100%;
+	  }
+	  
+	  a:active {
+		color: var(--culoare-inchisa);
+		border: 2px solid black; /* Apare un border în jurul linkului */
+	  }

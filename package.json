@@ -1,12 +1,12 @@
 {
   "name": "proiect-tehnici-web",
   "version": "1.0.0",
-  "description": "\"# Proiect-Tehnici-Web\"",
+  "description": "bicicleta, bicicleta, mountain bike, road bike, bicicleta mtb, biciclete romania, componente biciclete, casti bicicleta, cauciucuri biciclete, frane bicicleta, schimbatoare bicicleta",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Stanica Victor Andrei",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.9",
