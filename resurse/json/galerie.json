@@ -2,38 +2,55 @@
 	"cale_galerie":"resurse/imagini/galerie",
 	"imagini": [
 		{
-			"fisier":"briose-frisca.png",
+			"fisier":"bike1.jpg",
 			"descriere":"Brioșe",
-			"luni":["martie","februarie","noiembrie","aprilie"]
+			"sfert_ora":"1"
 		},
 		{
-			"fisier":"clatite.png",
+			"fisier":"bike2.jpg",
 			"descriere":"Clătite cu dulceață",
-			"luni":["ianuarie","februarie","iunie"]
+			"sfert_ora":"4"
 			
 		},
 		{
-			"fisier":"gogosi.png",
+			"fisier":"bike3.jpg",
 			"descriere":"Gogoși glazurate",
-			"luni":["ianuarie","noiembrie","iunie","martie","aprilie"]
+			"sfert_ora":"4"
 		},
 		{
-			"fisier":"tort-scortisoara.png",
+			"fisier":"bike4.jpg",
 			"descriere":"Tort cu scorțisoară",
-			
-			"luni":["noiembrie","aprilie"]
+			"sfert_ora":"4"
 		},
 		{
-			"fisier":"prajitura-ciocolata.png",
-			"descriere":"Prăjitură cu ciocolată"
+			"fisier":"bike5.jpg",
+			"descriere":"Prăjitură cu ciocolată",
+			"sfert_ora":"4"
 		},
 		{
-			"fisier":"tarta-afine.png",
-			"descriere":"Tartă cu afine"
+			"fisier":"bike6.jpg",
+			"descriere":"Tartă cu afine",
+			"sfert_ora":"4"
 		},
 		{
-			"fisier":"tort-trandafiri.png",
-			"descriere":"Tort special"
+			"fisier":"bike7.jpg",
+			"descriere":"Tort special",
+			"sfert_ora":"4"
+		},
+		{
+			"fisier":"bike8.jpg",
+			"descriere":"Tort special",
+			"sfert_ora":"4"
+		},
+		{
+			"fisier":"bike9.jpg",
+			"descriere":"Tort special",
+			"sfert_ora":"4"
+		},
+		{
+			"fisier":"bike10.jpg",
+			"descriere":"Tort special",
+			"sfert_ora":"4"
 		}
 	]
 }

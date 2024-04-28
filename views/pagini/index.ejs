@@ -13,9 +13,11 @@
     <%- include("../fragmente/header.ejs") %>
     
     <main>
+        
         <div id="grid-pagina">
         <section id="welcome">
             <h2>Bine ati venit!</h2>
+            <button type="button" class="btn btn-primary btn-lg">Stil-1-mare</button>
                 <p>Ip: <%- locals.ip  %></p>
                 <p class="anunt intro"><p><b>Bicicletele</b> <abbr title = "Mountain Bike">mtb</abbr> sunt super universale. Acestea pot fi utilizate pentru transportarea cumparaturilor, plimbarile prin parc sau calatoriile in jurul lumii. Insa rolul de baza a bicicletei mtb sau de munte ramane acela de a aduce un aport important biciclistului in depasirea traseelor de noroi, nu neaparat doar a celor de munte. 
 
@@ -43,9 +45,38 @@
                         </div>
                     <iframe name = "ifr-video" width="560" height="315" src="https://www.youtube.com/embed/xPKRvsFGKs4?si=Abd7u-iToayooWfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
+               
                 </section>
-        </section>
+                <section id="galerie-statica">
+                    <h2>Galerie</h2>
+                    <div id="grid-galerie">
+                        <%   var d=new Date();
+                             var minute = d.getMinutes(); 
+                             console.log("ce pula mea coaie"+minute);
+                             console.log("ce pula mea coaie  :"+(Math.floor(minute/15)+1));           
+                             for (let imag of locals.imagini) {      
+                                    if ((Math.floor(minute/15)+1) == imag.sfert_ora) {                                  
+                                    %>                            
+                                    <figure>                                
+                                        <picture>                                    
+                                            <source srcset="<%= imag.fisier_mediu %>" media="(max-width:1200px)"/>                                    
+                                            <img src="<%= imag.fisier %>" alt="prajituri">                                
+                                            </picture>                                                        
+                                            <figcaption><%= imag.descriere%></figcaption>                            
+                                            </figure>                   
+                            <% }} %>   
+                    </div>        
+                </section>
+            </section>
         <section id="promotii">
+            <div id="reflexie">
+                <div id="text-reflectat1">
+                    Super-Oferta!
+                    </div>
+                <div id="text-reflectat2">
+                    Super-Oferta!
+                    </div>
+            </div>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>

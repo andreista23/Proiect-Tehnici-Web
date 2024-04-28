@@ -1,0 +1,29 @@
+#reflexie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6em;
+    color: var(--culoare-accent);
+    transition: all 0.5s linear;
+  }
+#text-reflectat1, #text-reflectat2{
+  flex:1;
+  font-size: 40px;
+}
+#text-reflectat1{
+  justify-content: right;
+  text-align: right;
+  margin-right: 0;
+  transform-origin: top right;
+  transform: rotateZ(-25deg);
+}
+#text-reflectat2{
+  margin-left: 0;
+  transform-origin:top left;
+  /*conetaza ordinea transformarilor!*/
+  transform: rotateY(180deg) rotateZ(-25deg) translate(-40%,-50%);
+}
+
+#reflexie:hover{
+  color:var(--culoare-border);
+}
