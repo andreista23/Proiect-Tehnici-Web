@@ -17,6 +17,7 @@
         <div id="grid-pagina">
         <section id="welcome">
             <h2>Bine ati venit!</h2>
+            <%- include("../fragmente/formular-login.ejs")  %>
             <button type="button" class="btn btn-primary btn-lg">Stil-1-mare</button>
                 <p>Ip: <%- locals.ip  %></p>
                 <p class="anunt intro"><p><b>Bicicletele</b> <abbr title = "Mountain Bike">mtb</abbr> sunt super universale. Acestea pot fi utilizate pentru transportarea cumparaturilor, plimbarile prin parc sau calatoriile in jurul lumii. Insa rolul de baza a bicicletei mtb sau de munte ramane acela de a aduce un aport important biciclistului in depasirea traseelor de noroi, nu neaparat doar a celor de munte. 
@@ -51,9 +52,7 @@
                     <h2>Galerie</h2>
                     <div id="grid-galerie">
                         <%   var d=new Date();
-                             var minute = d.getMinutes(); 
-                             console.log("ce pula mea coaie"+minute);
-                             console.log("ce pula mea coaie  :"+(Math.floor(minute/15)+1));           
+                             var minute = d.getMinutes();        
                              for (let imag of locals.imagini) {      
                                     if ((Math.floor(minute/15)+1) == imag.sfert_ora) {                                  
                                     %>                            
